@@ -1,5 +1,5 @@
 Sub ChartProtection()
-' Created by Matt Wyen
+' Created by Matt Wyen -- https://github.com/talltechy
 For Each I In ActiveSheet.ChartObjects
     I.Chart.ProtectSelection = False
     I.Chart.ProtectData = True

@@ -1,5 +1,5 @@
 Sub MoveRowBasedOnValue()
-' Created by Matt Wyen
+' Created by Matt Wyen -- https://github.com/talltechy
     Dim xRg As Range ' This will store the list of dispositions from the Agenda sheet
     Dim I As Long ' This will be used to count the total number of used rows in the Agenda sheet
     Dim J As Long ' This will be used to identify the next blank row on the Closed Agenda sheet
@@ -9,7 +9,7 @@ Sub MoveRowBasedOnValue()
     Dim Agenda_Disposition_Column As String ' This will be used to hold which column the dispositions are in on the Agenda sheet
     Dim Closed_Agenda_Disposition_Column As String 'This will be used to hold which column the dispositions are in on the Closed Agenda sheet
     
-    Sheet2.Unprotect Password:="2xnqVNAGULGa5j$" ' Unprotect the target sheet - target sheet being the Closed Agenda xYearx
+    Sheet2.Unprotect Password:="EXAMPLE-PASSWORD" ' Unprotect the target sheet - target sheet being the Closed Agenda xYearx
     
     closing_dispositions = Array("Vulnerability is mitigated", "Converted to Project", "No action/Cancelled", "Issue Resolved", "Not technically possible or advisable", "RAF Signed") 'This is the list of dispositions that should be moved to the Closed Agenda.
     ' If you have more dispositions that need to be moved, add them in quotes (casing doesn't matter) to the array above
@@ -48,5 +48,5 @@ Sub MoveRowBasedOnValue()
         
     Next
     Application.ScreenUpdating = True ' Work is done, make visible and release.
-    Sheet2.Protect Password:="2xnqVNAGULGa5j$", UserInterFaceOnly:=True ' Protect the target sheet again.
+    Sheet2.Protect Password:="EXAMPLE-PASSWORD", UserInterFaceOnly:=True ' Protect the target sheet again.
 End Sub

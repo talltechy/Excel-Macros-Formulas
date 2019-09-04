@@ -1,5 +1,5 @@
 Private Sub Worksheet_Change(ByVal Target As Range)
-'Created by Matt Wyen
+' Created by Matt Wyen -- https://github.com/talltechy
 ' To allow multiple selections in a Drop Down List in Excel (without repetition)
 ' Put code in worksheet code page
 Dim Oldvalue As String

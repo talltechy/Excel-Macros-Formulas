@@ -1,5 +1,5 @@
 Private Sub Workbook_open()
-' Created by Matt Wyen
+' Created by Matt Wyen -- https://github.com/talltechy
 ' Repeat with the name and password of additional sheets to be manipulated by VBA.
 ' secret is the password to the sheet
 ' Sheet1/2/3 etc is the Worksheet.Codename property found in VBA module editor

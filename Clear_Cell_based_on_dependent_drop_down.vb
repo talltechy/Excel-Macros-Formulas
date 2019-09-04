@@ -1,5 +1,5 @@
 Private Sub Worksheet_Change(ByVal Target As Range)
-' Created by Matt Wyen
+' Created by Matt Wyen -- https://github.com/talltechy
 ' VBA code to clear the contents of a dependent drop down list
     On Error GoTo ErrorHandler
         'If the "Owner" Column is empty, then do not continue
